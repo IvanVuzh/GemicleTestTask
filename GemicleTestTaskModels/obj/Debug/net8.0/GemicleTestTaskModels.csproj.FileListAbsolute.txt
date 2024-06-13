@@ -1,0 +1,11 @@
+E:\Тестові\GemicleTestTaskModels\bin\Debug\net8.0\GemicleTestTaskModels.deps.json
+E:\Тестові\GemicleTestTaskModels\bin\Debug\net8.0\GemicleTestTaskModels.dll
+E:\Тестові\GemicleTestTaskModels\bin\Debug\net8.0\GemicleTestTaskModels.pdb
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.AssemblyInfoInputs.cache
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.AssemblyInfo.cs
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.csproj.CoreCompileInputs.cache
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.dll
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\refint\GemicleTestTaskModels.dll
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\GemicleTestTaskModels.pdb
+E:\Тестові\GemicleTestTaskModels\obj\Debug\net8.0\ref\GemicleTestTaskModels.dll

@@ -1,0 +1,15 @@
+E:\Тестові\GemicleTestTaskDataReader\bin\Debug\net8.0\GemicleTestTaskDataReader.deps.json
+E:\Тестові\GemicleTestTaskDataReader\bin\Debug\net8.0\GemicleTestTaskDataReader.dll
+E:\Тестові\GemicleTestTaskDataReader\bin\Debug\net8.0\GemicleTestTaskDataReader.pdb
+E:\Тестові\GemicleTestTaskDataReader\bin\Debug\net8.0\GemicleTestTaskModels.dll
+E:\Тестові\GemicleTestTaskDataReader\bin\Debug\net8.0\GemicleTestTaskModels.pdb
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.csproj.AssemblyReference.cache
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.GeneratedMSBuildEditorConfig.editorconfig
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.AssemblyInfoInputs.cache
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.AssemblyInfo.cs
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.csproj.CoreCompileInputs.cache
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.csproj.CopyComplete
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.dll
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\refint\GemicleTestTaskDataReader.dll
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\GemicleTestTaskDataReader.pdb
+E:\Тестові\GemicleTestTaskDataReader\obj\Debug\net8.0\ref\GemicleTestTaskDataReader.dll

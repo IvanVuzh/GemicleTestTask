@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemicleTestTaskApi", "GemicleTestTaskApi.csproj", "{CAA373C3-7A2E-45AE-B491-5C392CCBB1B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemicleTestTaskData", "..\GemicleTestTaskDataReader\GemicleTestTaskData.csproj", "{798EE0E1-60EA-4942-9E5E-BD7895372710}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2} = {8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemicleTestTaskModels", "..\GemicleTestTaskModels\GemicleTestTaskModels.csproj", "{C0D3D233-9EFA-4EE2-A2A1-2B537E0B1D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemicleTestTaskTemplates", "..\GemicleTestTaskTemplates\GemicleTestTaskTemplates.csproj", "{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemicleTestTaskUnitTests", "..\GemicleTestTaskUnitTests\GemicleTestTaskUnitTests.csproj", "{4B41A26F-4F66-4DE7-AC5A-A50C2938727B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA373C3-7A2E-45AE-B491-5C392CCBB1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA373C3-7A2E-45AE-B491-5C392CCBB1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA373C3-7A2E-45AE-B491-5C392CCBB1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA373C3-7A2E-45AE-B491-5C392CCBB1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798EE0E1-60EA-4942-9E5E-BD7895372710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798EE0E1-60EA-4942-9E5E-BD7895372710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798EE0E1-60EA-4942-9E5E-BD7895372710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798EE0E1-60EA-4942-9E5E-BD7895372710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D3D233-9EFA-4EE2-A2A1-2B537E0B1D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D3D233-9EFA-4EE2-A2A1-2B537E0B1D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D3D233-9EFA-4EE2-A2A1-2B537E0B1D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D3D233-9EFA-4EE2-A2A1-2B537E0B1D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFAFFE3-F8A0-451A-AACF-5E1C595555E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B41A26F-4F66-4DE7-AC5A-A50C2938727B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B41A26F-4F66-4DE7-AC5A-A50C2938727B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B41A26F-4F66-4DE7-AC5A-A50C2938727B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B41A26F-4F66-4DE7-AC5A-A50C2938727B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {768D6E08-5FF9-4E25-A907-BDD8E19374BC}
+	EndGlobalSection
+EndGlobal
