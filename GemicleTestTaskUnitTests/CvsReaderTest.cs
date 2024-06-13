@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Xunit;
+﻿using Xunit;
 using Shouldly;
 using GemicleTestTaskDataReader.CsvReader;
-using GemicleTestTaskDataReader;
-using System.Reflection.PortableExecutable;
 using GemicleTestTaskModels.DBModels;
 
 namespace GemicleTestTaskUnitTests

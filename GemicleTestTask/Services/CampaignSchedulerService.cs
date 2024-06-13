@@ -11,7 +11,7 @@ namespace GemicleTestTaskApi.Services
     {
         private readonly ICampaignRepository _campaignRepository;
         private readonly ICustomerRepository _customerRepository;
-        private readonly ICustomerCampaignSchedulerRepository _customerCampaignScheduleRepository;
+        private readonly ICustomerCampaignSchedulerRepository _customerCampaignSchedulerRepository;
 
         public CampaignSchedulerService(
             ICampaignRepository campaignRepository, 
@@ -20,7 +20,7 @@ namespace GemicleTestTaskApi.Services
         {
             _campaignRepository = campaignRepository;
             _customerRepository = customerRepository;
-            _customerCampaignScheduleRepository = customerCampaignLogRepository;
+            _customerCampaignSchedulerRepository = customerCampaignLogRepository;
         }
 
         public async Task<List<Campaign>> GetAllCampaigns()
@@ -57,9 +57,9 @@ namespace GemicleTestTaskApi.Services
 
             var previouslyPlannedCampaignsForToday = await _campaignRepository.GetAllCampaignsAfterThisMomentAsync();
 
-            var alreadySentTo = await _customerCampaignScheduleRepository.AllAffectedTodayCustomerIdsAsync(DateTime.UtcNow);
+            var alreadySentTo = await _customerCampaignSchedulerRepository.AllAffectedTodayCustomerIdsAsync(DateTime.UtcNow);
 
-            var plannedToSendTo = await _customerCampaignScheduleRepository.AllPlannedForTodayCustomerIdsAsync(DateTime.UtcNow);
+            var plannedToSendTo = await _customerCampaignSchedulerRepository.AllPlannedForTodayCustomerIdsAsync(DateTime.UtcNow);
 
             var shouldSendToCustomers = possiblyAffectedCustomers.Where(c => !alreadySentTo.Any(ast => ast.CustomerId == c.Id));
 
@@ -70,11 +70,11 @@ namespace GemicleTestTaskApi.Services
             // remove all previously planned to send if current campaign has lower Priority (lower Priority number means higher Priority)
             shouldSendToCustomers.Where(c => !plannedToSendTo.Any(ast => ast.CustomerId == c.Id) || shouldRescheduleForCustomers.Any(sch => sch.CustomerId == c.Id));
 
-            await _customerCampaignScheduleRepository.DeleteSchedulesAsync(shouldRescheduleForCustomers);
+            await _customerCampaignSchedulerRepository.DeleteSchedulesAsync(shouldRescheduleForCustomers);
 
             foreach (var customer in shouldSendToCustomers)
             {
-                await _customerCampaignScheduleRepository.ScheduleCampaignToSendAsync(customer.Id, campaign.Id, campaignData.ScheduledTime);
+                await _customerCampaignSchedulerRepository.ScheduleCampaignToSendAsync(customer.Id, campaign.Id, campaignData.ScheduledTime);
             }
         }
 
@@ -82,7 +82,7 @@ namespace GemicleTestTaskApi.Services
         {
             var campaigns = await _campaignRepository.GetAllCampaignsAfterThisMomentAsync();
 
-            var teplatesToBeSent = await _customerCampaignScheduleRepository.GetAllTemplatesToBeSentAsync();
+            var teplatesToBeSent = await _customerCampaignSchedulerRepository.GetAllTemplatesToBeSentAsync();
 
             var campaignTasks = new List<Task>();
 
@@ -115,7 +115,7 @@ namespace GemicleTestTaskApi.Services
 
                 Console.WriteLine($"{DateTime.Now}: Campaign {campaign.Id} executed successfully.");
 
-                await Task.Delay(TimeSpan.FromMinutes(30));
+                await Task.Delay(TimeSpan.FromMinutes(.5));
             }
             catch (Exception ex)
             {
