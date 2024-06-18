@@ -115,7 +115,7 @@ namespace GemicleTestTaskApi.Services
 
                 Console.WriteLine($"{DateTime.Now}: Campaign {campaign.Id} executed successfully.");
 
-                await Task.Delay(TimeSpan.FromMinutes(.5));
+                await Task.Delay(TimeSpan.FromMinutes(30));
             }
             catch (Exception ex)
             {
